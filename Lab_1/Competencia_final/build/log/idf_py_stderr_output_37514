@@ -1,0 +1,21 @@
+Command: make -j 10 flash
+In file included from /Users/diegogiordano/esp/idf/esp-idf/components/driver/deprecated/driver/i2s.h:23,
+                 from /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Competencia_final/main/Competencia_final.c:11:
+/Users/diegogiordano/esp/idf/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+/Users/diegogiordano/esp/idf/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Competencia_final/main/Competencia_final.c: In function 'cleanup_spiffs_files':
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Competencia_final/main/Competencia_final.c:399:61: error: '%s' directive output may be truncated writing up to 255 bytes into a region of size 248 [-Werror=format-truncation=]
+  399 |             snprintf(full_path, sizeof(full_path), "/spiffs/%s", entry->d_name);
+      |                                                             ^~
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Competencia_final/main/Competencia_final.c:399:13: note: 'snprintf' output between 9 and 264 bytes into a destination of size 256
+  399 |             snprintf(full_path, sizeof(full_path), "/spiffs/%s", entry->d_name);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[3]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/Competencia_final.c.obj] Error 1
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make[1]: *** [CMakeFiles/flash.dir/rule] Error 2
+make: *** [flash] Error 2
