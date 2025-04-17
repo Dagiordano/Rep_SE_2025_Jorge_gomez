@@ -1,0 +1,52 @@
+Command: make -j 10 all
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c: In function 'measure_performance':
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:36:29: error: implicit declaration of function 'xthal_get_ccount' [-Wimplicit-function-declaration]
+   36 |     uint32_t start_cycles = xthal_get_ccount();
+      |                             ^~~~~~~~~~~~~~~~
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c: In function 'app_main':
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:55:44: error: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   55 |     printf("DRAM - Time: %llu us, Cycles: %u\n", time_us, cycles);
+      |                                           ~^              ~~~~~~
+      |                                            |              |
+      |                                            unsigned int   uint32_t {aka long unsigned int}
+      |                                           %lu
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:58:44: error: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   58 |     printf("IRAM - Time: %llu us, Cycles: %u\n", time_us, cycles);
+      |                                           ~^              ~~~~~~
+      |                                            |              |
+      |                                            unsigned int   uint32_t {aka long unsigned int}
+      |                                           %lu
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:61:43: error: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   61 |     printf("RTC - Time: %llu us, Cycles: %u\n", time_us, cycles);
+      |                                          ~^              ~~~~~~
+      |                                           |              |
+      |                                           unsigned int   uint32_t {aka long unsigned int}
+      |                                          %lu
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:64:45: error: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   64 |     printf("Flash - Time: %llu us, Cycles: %u\n", time_us, cycles);
+      |                                            ~^              ~~~~~~
+      |                                             |              |
+      |                                             unsigned int   uint32_t {aka long unsigned int}
+      |                                            %lu
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:81:56: error: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   81 |         printf("Dynamic DRAM - Time: %llu us, Cycles: %u\n", time_us, cycles);
+      |                                                       ~^              ~~~~~~
+      |                                                        |              |
+      |                                                        unsigned int   uint32_t {aka long unsigned int}
+      |                                                       %lu
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:102:56: error: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  102 |         printf("Dynamic IRAM - Time: %llu us, Cycles: %u\n", time_us, cycles);
+      |                                                       ~^              ~~~~~~
+      |                                                        |              |
+      |                                                        unsigned int   uint32_t {aka long unsigned int}
+      |                                                       %lu
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_4/main/Ejercicio_4.c:123:49: error: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  123 |         printf("PSRAM - Time: %llu us, Cycles: %u\n", time_us, cycles);
+      |                                                ~^              ~~~~~~
+      |                                                 |              |
+      |                                                 unsigned int   uint32_t {aka long unsigned int}
+      |                                                %lu
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/Ejercicio_4.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2
