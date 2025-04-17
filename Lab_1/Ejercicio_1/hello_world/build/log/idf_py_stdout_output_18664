@@ -1,0 +1,68 @@
+Command: make -j 10 all
+[  0%] Built target sections.ld.in
+[  0%] Built target memory.ld
+[  0%] Built target _project_elf_src
+[  0%] Built target partition_table_bin
+[  0%] Built target custom_bundle
+[  1%] Performing build step for 'bootloader'
+[  2%] Built target __idf_cxx
+[  1%] Built target _project_elf_src
+[  3%] Built target __idf_pthread
+[  8%] Built target __idf_log
+[ 15%] Built target __idf_esp_rom
+[  7%] Built target __idf_newlib
+[ 17%] Built target __idf_esp_common
+[ 10%] Built target __idf_freertos
+[ 26%] Built target __idf_esp_hw_support
+[ 28%] Built target __idf_esp_system
+[ 35%] Built target __idf_efuse
+[ 19%] Built target __idf_esp_hw_support
+[ 20%] Built target __idf_esp_security
+[ 55%] Built target __idf_bootloader_support
+[ 26%] Built target __idf_soc
+[ 57%] Built target __idf_esp_bootloader_format
+[ 58%] Built target __idf_spi_flash
+[ 27%] Built target __idf_heap
+[ 65%] Built target __idf_hal
+[ 30%] Built target __idf_log
+[ 67%] Built target __idf_micro-ecc
+[ 40%] Built target __idf_hal
+[ 91%] Built target __idf_soc
+[ 94%] Built target __idf_xtensa
+[ 42%] Built target __idf_esp_rom
+[ 96%] Built target __idf_main
+[ 43%] Built target __idf_esp_common
+[ 98%] Built target bootloader.elf
+[100%] Built target gen_project_binary
+[ 51%] Built target __idf_esp_system
+Bootloader binary size 0x6650 bytes. 0x9b0 bytes (9%) free.
+[ 55%] Built target __idf_spi_flash
+[100%] Built target bootloader_check_size
+[100%] Built target app
+[ 57%] Built target __idf_esp_mm
+[ 57%] No install step for 'bootloader'
+[ 57%] Completed 'bootloader'
+[ 61%] Built target __idf_bootloader_support
+[ 62%] Built target bootloader
+[ 63%] Built target __idf_efuse
+[ 63%] Built target __idf_esp_partition
+[ 63%] Built target __idf_app_update
+[ 63%] Built target __idf_esp_bootloader_format
+[ 64%] Built target __idf_esp_app_format
+[ 68%] Built target mbedtls
+[ 70%] Built target mbedx509
+[ 90%] Built target mbedcrypto
+[ 90%] Built target p256m
+[ 91%] Built target everest
+[ 92%] Built target __idf_mbedtls
+[ 93%] Built target __idf_esp_pm
+[ 95%] Built target __idf_esp_timer
+[ 95%] Built target __idf_esp_driver_gpio
+[ 97%] Built target __idf_xtensa
+[ 98%] Built target __idf_main
+[ 98%] Built target __ldgen_output_sections.ld
+[100%] Built target hello_world.elf
+[100%] Built target gen_project_binary
+hello_world.bin binary size 0x25ae0 bytes. Smallest app partition is 0x100000 bytes. 0xda520 bytes (85%) free.
+[100%] Built target app_check_size
+[100%] Built target app

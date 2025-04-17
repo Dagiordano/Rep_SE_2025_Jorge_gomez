@@ -1,0 +1,26 @@
+Command: make -j 10 all
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c: In function 'loadImageFromSPIFFS':
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:10:3: error: unknown type name 'File'
+   10 |   File f = SPIFFS.open("/imagen_96x96.raw", "r");
+      |   ^~~~
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:10:12: error: 'SPIFFS' undeclared (first use in this function)
+   10 |   File f = SPIFFS.open("/imagen_96x96.raw", "r");
+      |            ^~~~~~
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:10:12: note: each undeclared identifier is reported only once for each function it appears in
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:14:6: error: request for member 'read' in something not a structure or union
+   14 |     f.read(image[y], WIDTH);
+      |      ^
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:16:4: error: request for member 'close' in something not a structure or union
+   16 |   f.close();
+      |    ^
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c: In function 'app_main':
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:23:13: warning: variable 'sobel_result' set but not used [-Wunused-but-set-variable]
+   23 |     uint8_t sobel_result[HEIGHT][WIDTH];
+      |             ^~~~~~~~~~~~
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c: At top level:
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:37:6: warning: 'applySobel' defined but not used [-Wunused-function]
+   37 | void applySobel() {
+      |      ^~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/Ejercicio_3.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,743 @@
+Command: /Users/diegogiordano/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python /Users/diegogiordano/esp/idf/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-110 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/build/Ejercicio_3.elf /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/build/bootloader/bootloader.elf -m '/Users/diegogiordano/esp/idf-tools/python_env/idf5.5_py3.12_env/bin/python' '/Users/diegogiordano/esp/idf/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbserial-110 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081835: panic_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/panic.c:468
+--- 0x4008532d: esp_system_abort at /Users/diegogiordano/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008b1a1: __assert_func at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/assert.c:80
+--- 0x40082742: check_lock_nonzero at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:319 (discriminator 1)
+--- 0x4008293d: __retarget_lock_acquire_recursive at /Users/diegogiordano/esp/idf/esp-idf/components/newlib/src/locks.c:331
+--- 0x400de42b: _fgets_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:113 (discriminator 2)
+--- 0x400de4ef: fgets at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fgets.c:195 (discriminator 1)
+--- 0x400d6de1: app_main at /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:39
+--- 0x400e898d: main_task at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/app_startup.c:208
+--- 0x40085b21: vPortTaskWrapper at /Users/diegogiordano/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /Users/diegogiordano/esp/idf/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /Users/diegogiordano/esp/idf/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

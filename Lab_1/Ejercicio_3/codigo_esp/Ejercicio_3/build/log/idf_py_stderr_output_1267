@@ -1,0 +1,17 @@
+Command: make -j 10 all
+CMake Deprecation Warning at /Users/diegogiordano/esp/idf/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:21 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:3:10: fatal error: FS.h: No such file or directory
+    3 | #include "FS.h"
+      |          ^~~~~~
+compilation terminated.
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/Ejercicio_3.c.obj] Error 1
+make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [all] Error 2

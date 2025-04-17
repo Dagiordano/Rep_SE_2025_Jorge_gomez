@@ -1,0 +1,7 @@
+X value,Runs,Average time per run (us),Average time per run (ms),Average cycles per run,Average time per operation (us),Average cycles per operation,Cycles Addition,Cycles Addition with constant,Cycles Modulo,Cycles Multiplication,Cycles Division
+1000,5,166.2,0.1662,26615.8,0.033,5.323,19.14,13.13,21.14,19.14,20.01
+10000,5,1755.4,1.7554,280735.59,0.035,5.615,21.01,16.03,24.04,21.01,23.0
+25000,5,4377.6,4.3776,700246.38,0.035,5.602,21.05,16.01,24.01,21.04,23.02
+35000,5,6132.0,6.132,980988.0,0.035,5.606,21.03,16.01,24.02,21.03,23.01
+50000,5,8760.2,8.7602,1401477.62,0.035,5.606,21.02,16.01,24.02,21.02,23.02
+70000,5,12263.2,12.2632,1961977.25,0.035,5.606,21.02,16.01,24.02,21.02,23.02

@@ -1,0 +1,1 @@
+Link para Google Collab: https://colab.research.google.com/drive/1mmbLAIilL-7PlrQ9HzfTk9OyRj43Dw7e#scrollTo=1Xce2CbzZmfZ
