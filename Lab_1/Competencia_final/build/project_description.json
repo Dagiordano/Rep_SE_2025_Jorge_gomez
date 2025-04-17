@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "Competencia_final",
-    "project_version":    "6176405",
+    "project_version":    "adf7cc7d-dirty",
     "project_path":       "/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Competencia_final",
     "idf_path":           "/Users/diegogiordano/esp/idf/esp-idf",
     "build_dir":          "/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Competencia_final/build",
