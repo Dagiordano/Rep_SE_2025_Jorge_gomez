@@ -17,14 +17,14 @@
 #define SAMPLE_RATE 16000
 #define TAG "SPECTROGRAM"
 
-// Global variables for audio data and spectrogram
+// Variables globales
 static float *audio_data = NULL;
 static float *spectrogram = NULL;
 static float *fft_input = NULL;
 static uint64_t start_cycles = 0;
 static uint64_t end_cycles = 0;
 
-// Function declarations
+// Declaraciones de funciones
 static esp_err_t init_spiffs(void);
 static esp_err_t read_audio_data(void);
 static esp_err_t generate_spectrogram(void);
@@ -38,14 +38,14 @@ void app_main(void)
     
     ESP_LOGI(TAG, "Starting application");
     
-    // Initialize SPIFFS
+    // Inicializar SPIFFS
     ret = init_spiffs();
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to initialize SPIFFS");
         return;
     }
     
-    // Read audio data
+    // Leer datos de audio
     ret = read_audio_data();
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to read audio data");
@@ -53,7 +53,7 @@ void app_main(void)
         return;
     }
     
-    // Generate spectrogram
+    // Generar espectrograma
     ret = generate_spectrogram();
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to generate spectrogram");
@@ -61,19 +61,19 @@ void app_main(void)
         return;
     }
     
-    // Save spectrogram
+    // Guardar espectrograma
     ret = save_spectrogram();
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to save spectrogram");
     }
     
-    // Clean up
+    // Limpiar recursos
     cleanup_resources();
 }
 
 static esp_err_t init_spiffs(void)
 {
-    ESP_LOGI(TAG, "Initializing SPIFFS");
+    ESP_LOGI(TAG, "Inicializando SPIFFS");
     
     esp_vfs_spiffs_conf_t conf = {
         .base_path = "/spiffs",
@@ -97,25 +97,25 @@ static esp_err_t init_spiffs(void)
     
     ESP_LOGI(TAG, "Partition size: total: %d, used: %d", total, used);
     
-    // If we have less than 20% free space, try to clean up
+    // Si tenemos menos de 20% de espacio libre, intenta limpiar
     if ((total - used) < (total / 5)) {
-        ESP_LOGW(TAG, "Low disk space, attempting cleanup");
+        ESP_LOGW(TAG, "Espacio en disco bajo, intentando limpiar");
         ret = cleanup_spiffs_files();
         if (ret != ESP_OK) {
             ESP_LOGE(TAG, "Failed to clean up files");
             return ret;
         }
         
-        // Check space again after cleanup
+        // Verificar espacio nuevamente después de la limpieza
         ret = esp_spiffs_info(NULL, &total, &used);
         if (ret != ESP_OK) {
             ESP_LOGE(TAG, "Failed to get SPIFFS info after cleanup");
             return ret;
         }
         
-        // If still low on space, format the partition
+        // Si aún falta espacio, formatear la partición
         if ((total - used) < (total / 5)) {
-            ESP_LOGW(TAG, "Still low on space, formatting SPIFFS");
+            ESP_LOGW(TAG, "Aún falta espacio, formateando SPIFFS");
             esp_vfs_spiffs_unregister(NULL);
             ret = esp_vfs_spiffs_register(&conf);
             if (ret != ESP_OK) {
@@ -138,10 +138,10 @@ static esp_err_t read_audio_data(void)
         return ESP_FAIL;
     }
 
-    // Skip WAV header (assuming 16-bit PCM)
+    // Saltar encabezado WAV
     fseek(f, 44, SEEK_SET);
 
-    // Allocate memory for audio data with DMA capability and 16-byte alignment
+    // Asignar memoria para datos de audio
     audio_data = heap_caps_aligned_alloc(16, NFFT * sizeof(float), MALLOC_CAP_8BIT | MALLOC_CAP_DMA);
     if (audio_data == NULL) {
         ESP_LOGE(TAG, "Failed to allocate memory for audio data");
@@ -149,7 +149,7 @@ static esp_err_t read_audio_data(void)
         return ESP_ERR_NO_MEM;
     }
 
-    // Read raw audio data as 16-bit integers
+    // Leer datos de audio sin procesar
     int16_t *raw_audio = heap_caps_aligned_alloc(16, NFFT * sizeof(int16_t), MALLOC_CAP_8BIT | MALLOC_CAP_DMA);
     if (raw_audio == NULL) {
         ESP_LOGE(TAG, "Failed to allocate memory for raw audio");
@@ -170,12 +170,11 @@ static esp_err_t read_audio_data(void)
         return ESP_FAIL;
     }
 
-    // After reading the raw audio data
+    // Convertir a float sin normalizar para mantener la amplitud
     float max_val = 0.0f;
     float min_val = 0.0f;
-    // Convert to float and normalize
     for (int i = 0; i < NFFT; i++) {
-        audio_data[i] = (float)raw_audio[i] / 32768.0f;
+        audio_data[i] = (float)raw_audio[i];
         max_val = fmaxf(max_val, audio_data[i]);
         min_val = fminf(min_val, audio_data[i]);
     }
@@ -195,21 +194,21 @@ static esp_err_t generate_spectrogram(void)
         return ESP_FAIL;
     }
 
-    // Initialize DSP library
+    // Inicializar biblioteca DSP
     esp_err_t ret = dsps_fft2r_init_fc32(NULL, NFFT);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to initialize DSP library");
         return ret;
     }
 
-    // Allocate memory for spectrogram
+    // Asignar memoria para espectrograma
     spectrogram = heap_caps_aligned_alloc(16, (NFFT/2 + 1) * sizeof(float), MALLOC_CAP_8BIT | MALLOC_CAP_DMA);
     if (spectrogram == NULL) {
         ESP_LOGE(TAG, "Failed to allocate memory for spectrogram");
         return ESP_ERR_NO_MEM;
     }
 
-    // Allocate memory for FFT input
+    // Asignar memoria para FFT input
     fft_input = heap_caps_aligned_alloc(16, NFFT * 2 * sizeof(float), MALLOC_CAP_8BIT | MALLOC_CAP_DMA);
     if (fft_input == NULL) {
         ESP_LOGE(TAG, "Failed to allocate memory for FFT input");
@@ -218,7 +217,7 @@ static esp_err_t generate_spectrogram(void)
         return ESP_ERR_NO_MEM;
     }
 
-    // Create window function
+    // Crear ventana Hamming (como en Arduino)
     float *window = heap_caps_aligned_alloc(16, NFFT * sizeof(float), MALLOC_CAP_8BIT | MALLOC_CAP_DMA);
     if (window == NULL) {
         ESP_LOGE(TAG, "Failed to allocate memory for window function");
@@ -229,54 +228,42 @@ static esp_err_t generate_spectrogram(void)
         return ESP_ERR_NO_MEM;
     }
 
-    // Create Hann window
+    // Crear ventana Hamming sin normalización
     for (int i = 0; i < NFFT; i++) {
-        window[i] = 0.5f * (1.0f - cosf(2.0f * M_PI * i / (NFFT - 1)));
+        window[i] = 0.54f - 0.46f * cosf(2.0f * M_PI * i / (NFFT - 1));
     }
 
-    // Calculate window normalization factor
-    float window_norm = 0.0f;
+    // Aplicar ventana y preparar FFT input
     for (int i = 0; i < NFFT; i++) {
-        window_norm += window[i] * window[i];
-    }
-    window_norm = sqrtf(window_norm);
-
-    // Apply window and prepare FFT input
-    for (int i = 0; i < NFFT; i++) {
-        fft_input[i * 2] = audio_data[i] * window[i] / window_norm;  // Real part
-        fft_input[i * 2 + 1] = 0.0f;                                 // Imaginary part
+        fft_input[i * 2] = audio_data[i] * window[i];  // Parte real
+        fft_input[i * 2 + 1] = 0.0f;                   // Parte imaginaria
     }
 
     heap_caps_free(window);
 
-    // Start cycle counting
     start_cycles = esp_cpu_get_cycle_count();
 
-    // Compute FFT
+    // Computar FFT
     ret = dsps_fft2r_fc32(fft_input, NFFT);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "FFT computation failed");
         return ret;
     }
 
-    // Bit reversal
+    // Reversión de bits
     ret = dsps_bit_rev_fc32(fft_input, NFFT);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Bit reversal failed");
         return ret;
     }
 
-    // Scale FFT output
-    float scale = 1.0f / sqrtf(NFFT);
-    
-    // Convert to magnitude spectrum
+    // Convertir a espectro de magnitud sin escalar por NFFT
     for (int i = 0; i < NFFT/2 + 1; i++) {
-        float real = fft_input[i * 2] * scale;
-        float imag = fft_input[i * 2 + 1] * scale;
+        float real = fft_input[i * 2];
+        float imag = fft_input[i * 2 + 1];
         spectrogram[i] = sqrtf(real * real + imag * imag);
     }
 
-    // End cycle counting
     end_cycles = esp_cpu_get_cycle_count();
     
     // Log some statistics
