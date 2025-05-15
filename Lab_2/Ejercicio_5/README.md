@@ -1,0 +1,1 @@
+En el collab "Camera_view" se encuentra la representación de la foto sacada con el codigo del ejercicio 4. Se debe correr todo el codigo en un google collab notebook
