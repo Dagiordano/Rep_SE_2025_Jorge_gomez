@@ -1,9 +1,0 @@
-Command: make -j 10 all
-/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c: In function 'app_main':
-/Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_1/Ejercicio_3/codigo_esp/Ejercicio_3/main/Ejercicio_3.c:37:7: error: implicit declaration of function 'printff'; did you mean 'printf'? [-Wimplicit-function-declaration]
-   37 |       printff("Read line: %s", line);
-      |       ^~~~~~~
-      |       printf
-make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/Ejercicio_3.c.obj] Error 1
-make[1]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
-make: *** [all] Error 2
