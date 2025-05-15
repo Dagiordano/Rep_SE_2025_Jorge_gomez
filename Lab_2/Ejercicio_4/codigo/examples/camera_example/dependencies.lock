@@ -1,0 +1,17 @@
+dependencies:
+  espressif/esp32-camera:
+    dependencies: []
+    source:
+      path: /Users/diegogiordano/dev/universidad/embedded_systems/rep_se_202501_Jorge_Gomez/Lab_2/Ejercicio_4/esp32-camera
+      type: local
+    version: '*'
+  idf:
+    source:
+      type: idf
+    version: 5.5.0
+direct_dependencies:
+- espressif/esp32-camera
+- idf
+manifest_hash: 52864365fffbd82b35398a2f524c71c87d5008d5df2fcf1e2b8dc5110b53ecff
+target: esp32
+version: 2.0.0
