@@ -1,0 +1,22 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Captured images
+captured_images_*/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ESP-IDF build directory
+build/ 
+.env
+.env.local
+.env.development
+.env.production
+ .venv
+ 
