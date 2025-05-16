@@ -1,0 +1,3 @@
+El codigo está en la carpeta "ejercicio2" Tuvimos percances con el esp32 wroom que nos pasaron, tenia problemas para montar en la flash, pero usando arduino se debe cargar el archivo "ej2.ino" y una vez cargado y conectado al computador se ejecuta "simple_visualizer.py" primero cargando las librerias con el comando  "pip install -r ejercicio2/requirements.txt" luego se ejecuta con "python simple_visualizer.py"
+
+El simple_visualizer muestra en tiempo real la señal de presión del fsr y la señal del ECG
