@@ -1,0 +1,91 @@
+ (10098) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (10348) ESP32-CAM: Memory: Free DRAM: 2750163 bytes, Free PSRAM: 2511348 bytes
+I (10358) ESP32-CAM: === Results for 240 MHz ===
+I (10358) ESP32-CAM: Avg. FPS: 3.87
+I (10358) ESP32-CAM: Avg. frame time: 248.83 ms
+I (10358) ESP32-CAM: Avg. capture time: 0.19 ms (0.1%)
+I (10358) ESP32-CAM: Avg. histogram time: 2.73 ms (1.1%)
+I (10368) ESP32-CAM: Avg. Sobel time: 5.26 ms (2.1%)
+I (10368) ESP32-CAM: Avg. save time: 0.30 ms (0.1%)
+I (10368) ESP32-CAM: Estimated power consumption: 370.00 mW, 0.026582 mWh per frame
+I (10378) ESP32-CAM: Performance per Watt: 10.45 FPS/W
+I (10388) ESP32-CAM: Total energy for 10 days: 88800.00 Wh (24000000.00 mAh at 3.7V)
+I (11388) ESP32-CAM: Setting CPU frequency to 160 MHz
+I (11388) pm: Frequency switching config: CPU_MAX: 160, APB_MAX: 160, APB_MIN: 160, Light sleep: DISABLED
+I (11388) ESP32-CAM: CPU frequency set successfully
+I (12388) ESP32-CAM: Testing with CPU frequency: 160 MHz
+I (12388) ESP32-CAM: Freed oldest image set (index 0)
+I (12388) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (12648) ESP32-CAM: Freed oldest image set (index 1)
+I (12648) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (12908) ESP32-CAM: Freed oldest image set (index 2)
+I (12908) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (13168) ESP32-CAM: Freed oldest image set (index 3)
+I (13168) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (13428) ESP32-CAM: Freed oldest image set (index 4)
+I (13428) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (13688) ESP32-CAM: Freed oldest image set (index 5)
+I (13688) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (13948) ESP32-CAM: Freed oldest image set (index 6)
+I (13948) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (14208) ESP32-CAM: Freed oldest image set (index 7)
+I (14208) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (14468) ESP32-CAM: Freed oldest image set (index 8)
+I (14468) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (14728) ESP32-CAM: Freed oldest image set (index 9)
+I (14728) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (14978) ESP32-CAM: Memory: Free DRAM: 2750163 bytes, Free PSRAM: 2511348 bytes
+I (14988) ESP32-CAM: Freed oldest image set (index 0)
+I (14988) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (15248) ESP32-CAM: Freed oldest image set (index 1)
+I (15248) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (15508) ESP32-CAM: Freed oldest image set (index 2)
+I (15508) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (15768) ESP32-CAM: Freed oldest image set (index 3)
+I (15768) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (16028) ESP32-CAM: Freed oldest image set (index 4)
+I (16028) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (16288) ESP32-CAM: Freed oldest image set (index 5)
+I (16288) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (16548) ESP32-CAM: Freed oldest image set (index 6)
+I (16548) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (16808) ESP32-CAM: Freed oldest image set (index 7)
+I (16808) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (17068) ESP32-CAM: Freed oldest image set (index 8)
+I (17068) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (17328) ESP32-CAM: Freed oldest image set (index 9)
+I (17328) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (17578) ESP32-CAM: Memory: Free DRAM: 2750163 bytes, Free PSRAM: 2511348 bytes
+I (17588) ESP32-CAM: Freed oldest image set (index 0)
+I (17588) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (17848) ESP32-CAM: Freed oldest image set (index 1)
+I (17848) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (18108) ESP32-CAM: Freed oldest image set (index 2)
+I (18108) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (18368) ESP32-CAM: Freed oldest image set (index 3)
+I (18368) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (18628) ESP32-CAM: Freed oldest image set (index 4)
+I (18628) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (18888) ESP32-CAM: Freed oldest image set (index 5)
+I (18888) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (19148) ESP32-CAM: Freed oldest image set (index 6)
+I (19148) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (19408) ESP32-CAM: Freed oldest image set (index 7)
+I (19408) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (19668) ESP32-CAM: Freed oldest image set (index 8)
+I (19668) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (19928) ESP32-CAM: Freed oldest image set (index 9)
+I (19928) ESP32-CAM: Scaling down image for processing: 640x480 -> 320x240
+I (20178) ESP32-CAM: Memory: Free DRAM: 2750163 bytes, Free PSRAM: 2511348 bytes
+I (20188) ESP32-CAM: === Results for 160 MHz ===
+I (20188) ESP32-CAM: Avg. FPS: 3.85
+I (20188) ESP32-CAM: Avg. frame time: 250.18 ms
+I (20188) ESP32-CAM: Avg. capture time: 0.30 ms (0.1%)
+I (20188) ESP32-CAM: Avg. histogram time: 2.74 ms (1.1%)
+I (20198) ESP32-CAM: Avg. Sobel time: 5.24 ms (2.1%)
+I (20198) ESP32-CAM: Avg. save time: 0.31 ms (0.1%)
+I (20198) ESP32-CAM: Estimated power consumption: 330.00 mW, 0.023833 mWh per frame
+I (20208) ESP32-CAM: Performance per Watt: 11.66 FPS/W
+I (20218) ESP32-CAM: Total energy for 10 days: 79200.00 Wh (21405404.00 mAh at 3.7V)
+
+Done
