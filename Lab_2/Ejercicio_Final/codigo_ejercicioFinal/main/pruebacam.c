@@ -383,8 +383,7 @@ static void process_image(camera_fb_t *fb)
         return;
     }
     
-    // Create a smaller dummy grayscale image for processing demo if full image is too large
-    // Use a smaller resolution for the grayscale image if needed
+    // Convert JPEG to grayscale
     size_t gray_width = fb->width;
     size_t gray_height = fb->height;
     size_t gray_size = gray_width * gray_height;
@@ -398,7 +397,7 @@ static void process_image(camera_fb_t *fb)
                 fb->width, fb->height, gray_width, gray_height);
     }
     
-    // First try PSRAM, fall back to regular memory
+    // Allocate memory for grayscale image
     uint8_t *grayscale_img = heap_caps_malloc(gray_size, MALLOC_CAP_SPIRAM);
     if (!grayscale_img) {
         ESP_LOGW(TAG, "Could not allocate PSRAM for grayscale image, using regular memory");
@@ -409,8 +408,33 @@ static void process_image(camera_fb_t *fb)
         }
     }
     
-    // Fill with dummy data (in a real implementation this would be actual grayscale pixel data)
-    memset(grayscale_img, 128, gray_size);
+    // Convert JPEG to grayscale
+    if (fb->format == PIXFORMAT_JPEG) {
+        // For JPEG, we need to decode it first
+        camera_fb_t *rgb_fb = esp_camera_fb_get();
+        if (!rgb_fb) {
+            ESP_LOGE(TAG, "Failed to get RGB frame buffer");
+            free(grayscale_img);
+            return;
+        }
+        
+        // Convert RGB to grayscale
+        for (size_t i = 0; i < gray_size; i++) {
+            // RGB888 format: 3 bytes per pixel
+            size_t rgb_idx = i * 3;
+            // Convert to grayscale using standard luminance formula
+            grayscale_img[i] = (uint8_t)((rgb_fb->buf[rgb_idx] * 0.299f) + 
+                                        (rgb_fb->buf[rgb_idx + 1] * 0.587f) + 
+                                        (rgb_fb->buf[rgb_idx + 2] * 0.114f));
+        }
+        
+        // Return the RGB frame buffer
+        esp_camera_fb_return(rgb_fb);
+    } else {
+        ESP_LOGE(TAG, "Unsupported pixel format");
+        free(grayscale_img);
+        return;
+    }
     
     stats.save_time = esp_timer_get_time() - save_start;
     

@@ -16,22 +16,23 @@ El rendimiento en FPS varía según la frecuencia del CPU:
 
 | Frecuencia CPU | FPS    |
 |----------------|--------|
-| 240 MHz        | 3.87   |
-| 160 MHz        | 3.85   |
+| 240 MHz        | 2.98   |
+| 160 MHz        | 2.79   |
+| 80 MHz         | 2.51   |
 
-El sistema es capaz de procesar aproximadamente 3.85-3.87 frames por segundo.
+El sistema es capaz de procesar entre 2.51 y 2.98 frames por segundo, dependiendo de la frecuencia del CPU.
 
 ## 3. Análisis del Cuello de Botella
 
-Distribución del tiempo de procesamiento a 240 MHz:
+Distribución del tiempo de procesamiento a 80 MHz:
 
 | Operación            | Tiempo (ms) | Porcentaje |
 |----------------------|-------------|------------|
-| Captura de imagen    | 0.19        | 0.1%       |
-| Ecualización histograma | 2.73     | 1.1%       |
-| Filtro Sobel         | 5.26        | 2.1%       |
-| Guardado en memoria  | 0.30        | 0.1%       |
-| **Total**            | **248.83**  | **100%**   |
+| Captura de imagen    | 0.55        | 0.1%       |
+| Ecualización histograma | 3.02     | 0.8%       |
+| Filtro Sobel         | 5.53        | 1.4%       |
+| Guardado en memoria  | 4.39        | 1.1%       |
+| **Total**            | **388.20**  | **100%**   |
 
 La suma de estas operaciones representa apenas el 3.4% del tiempo total de procesamiento por frame. El tiempo restante (96.6%) corresponde a:
 - Transferencia de datos entre la cámara y el ESP32
@@ -45,11 +46,15 @@ El cuello de botella no está en ninguna de las operaciones medidas específicam
 
 A 240 MHz:
 - Potencia estimada: 370.00 mW
-- Energía por frame: 0.026582 mWh
+- Energía por frame: 0.031033 mWh
 
 A 160 MHz:
 - Potencia estimada: 330.00 mW
-- Energía por frame: 0.023833 mWh
+- Energía por frame: 0.029569 mWh
+
+A 80 MHz:
+- Potencia estimada: 290.00 mW
+- Energía por frame: 0.032060 mWh
 
 ## 5. Rendimiento vs Frecuencia
 
@@ -57,19 +62,21 @@ A 160 MHz:
 
 | Frecuencia CPU | FPS    |
 |----------------|--------|
-| 240 MHz        | 3.87   |
-| 160 MHz        | 3.85   |
+| 240 MHz        | 2.98   |
+| 160 MHz        | 2.79   |
+| 80 MHz         | 2.51   |
 
-El rendimiento en términos de FPS prácticamente no varía al reducir la frecuencia de 240 MHz a 160 MHz, indicando que el sistema está limitado por otros factores como la velocidad de la cámara o la transferencia de datos, no por la velocidad del CPU.
+El rendimiento en términos de FPS disminuye gradualmente al reducir la frecuencia, pero la reducción no es proporcional a la reducción de frecuencia, indicando que el sistema está limitado por otros factores como la velocidad de la cámara o la transferencia de datos.
 
 ### Energía vs Frecuencia
 
 | Frecuencia CPU | Energía por frame (mWh) |
 |----------------|--------------------|
-| 240 MHz        | 0.026582           |
-| 160 MHz        | 0.023833           |
+| 240 MHz        | 0.031033           |
+| 160 MHz        | 0.029569           |
+| 80 MHz         | 0.032060           |
 
-Reducir la frecuencia disminuye el consumo de energía por frame en aproximadamente 10.3%.
+La energía por frame es más eficiente a 160 MHz, mientras que tanto 240 MHz como 80 MHz muestran un consumo ligeramente mayor.
 
 ## 6. Requisitos de Batería para 10 Días
 
@@ -81,15 +88,20 @@ Reducir la frecuencia disminuye el consumo de energía por frame en aproximadame
 - Energía total requerida: 79200.00 Wh
 - Capacidad de batería: 21405404.00 mAh a 3.7V
 
+### A 80 MHz:
+- Energía total requerida: 69599.99 Wh
+- Capacidad de batería: 18810808.00 mAh a 3.7V
+
 Estos cálculos asumen operación continua a máximo FPS durante 10 días, lo cual requeriría una batería extremadamente grande. En un caso real, se necesitaría implementar ciclos de sueño y estrategias de bajo consumo.
 
 ## 7. Medida de Desempeño (FPS/W)
 
 | Frecuencia CPU | FPS/W  |
 |----------------|--------|
-| 240 MHz        | 10.45  |
-| 160 MHz        | 11.66  |
+| 240 MHz        | 8.04   |
+| 160 MHz        | 8.46   |
+| 80 MHz         | 8.66   |
 
-**Configuración óptima: 160 MHz con 11.66 FPS/W**
+**Configuración óptima: 80 MHz con 8.66 FPS/W**
 
-Esta configuración proporciona el mejor equilibrio entre rendimiento y consumo de energía. La frecuencia de 160 MHz es la más eficiente, ofreciendo casi el mismo rendimiento que 240 MHz pero con un consumo de energía significativamente menor.
+Esta configuración proporciona el mejor equilibrio entre rendimiento y consumo de energía. La frecuencia de 80 MHz es la más eficiente, ofreciendo un rendimiento aceptable con el menor consumo de energía. Aunque el FPS es más bajo que en las otras configuraciones, la eficiencia energética es significativamente mejor.
